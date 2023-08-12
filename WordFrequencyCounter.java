@@ -21,9 +21,9 @@ public class WordFrequencyCounter {
             while ((line = reader.readLine()) != null) {
                 String[] words = line.split("\\s+");
                 for (String word : words) {
-                    word = word.replaceAll("[^a-zA-Z]", ""); // Remove non-alphabet characters
+                    word = word.replaceAll("[^a-zA-Z]", ""); 
                     if (!word.isEmpty()) {
-                        word = word.toLowerCase(); // Convert to lowercase
+                        word = word.toLowerCase(); 
                         wordFrequency.put(word, wordFrequency.getOrDefault(word, 0) + 1);
                     }
                 }
